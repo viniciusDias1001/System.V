@@ -36,6 +36,7 @@ public class GravadorDeDados {
 
 
 
+
     }
 
 
@@ -63,4 +64,25 @@ public class GravadorDeDados {
 
 
 
+    public void GravarPerfilEmArquivos(Map<String,Perfil> listaGravar) throws IOException{
+
+        BufferedWriter gravador = null;
+        try {
+            gravador = new BufferedWriter(new FileWriter(this.nomeArquivo,true));
+
+            for(Map.Entry<String,Perfil> s: listaGravar.entrySet()){
+                gravador.write( s.toString().replaceAll("=","#") +  "#" + "\n");
+            }
+
+        }
+        finally {
+            if(gravador != null) {
+                gravador.close();
+            }
+        }
+
+
+
+
+    }
 }

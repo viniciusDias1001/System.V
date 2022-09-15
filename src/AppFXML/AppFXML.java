@@ -25,7 +25,7 @@ public class AppFXML  extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Controlador c = new Controlador();
-        c.recuperarDados();
+
         for (Map.Entry<String,String> logins: c.listaAcessos.entrySet()){
             System.out.println("Lista de login:");
             System.out.println("E-mail: " + logins.getKey() + " Senha:" + logins.getValue());

@@ -29,23 +29,23 @@
 
     </Label>
 
-    <Label text="Nome: " GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="LEFT" styleClass="login-form-label"  ></Label>
-    <TextField text="Digite seu Nome"  GridPane.columnIndex="1" GridPane.rowIndex="1">
+    <Label   text="Nome: " GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="LEFT" styleClass="login-form-label"  ></Label>
+    <TextField fx:id="nome" text="Digite seu Nome"  GridPane.columnIndex="1" GridPane.rowIndex="1">
         <GridPane.margin>
             <Insets right="40"/>
         </GridPane.margin></TextField>
 
-    <Label text="Email: " GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="LEFT" styleClass="login-form-label"  ></Label>
-    <TextField text="Digite seu Email"  GridPane.columnIndex="1" GridPane.rowIndex="2"> </TextField>
+    <Label  text="Email: " GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="LEFT" styleClass="login-form-label"  ></Label>
+    <TextField fx:id="email" text="Digite seu Email"  GridPane.columnIndex="1" GridPane.rowIndex="2"> </TextField>
 
-    <Label text="CPF: " GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="LEFT" styleClass="login-form-label"  ></Label>
-    <TextField text="Digite seu CPF"  GridPane.columnIndex="1" GridPane.rowIndex="3"> </TextField>
+    <Label  text="CPF: " GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="LEFT" styleClass="login-form-label"  ></Label>
+    <TextField fx:id="cpf" text="Digite seu CPF"  GridPane.columnIndex="1" GridPane.rowIndex="3"> </TextField>
 
-    <Label text="Área de Trabalho: " GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="LEFT" styleClass="login-form-labelMenores2"  ></Label>
-    <TextField text="Digite sua Área"  GridPane.columnIndex="1" GridPane.rowIndex="4"> </TextField>
+    <Label  text="Área de Trabalho: " GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.halignment="LEFT" styleClass="login-form-labelMenores2"  ></Label>
+    <TextField fx:id="areaTrabalho" text="Digite sua Área"  GridPane.columnIndex="1" GridPane.rowIndex="4"> </TextField>
 
-    <Label text="Dados Sigilosos: " GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="LEFT" styleClass="login-form-labelMenores" GridPane.columnSpan="2" ></Label>
-    <TextField text="  Digite Seus Dados" styleClass="login-botao"  GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2" >
+    <Label  text="Dados Sigilosos: " GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.halignment="LEFT" styleClass="login-form-labelMenores" GridPane.columnSpan="2" ></Label>
+    <TextField fx:id="observacoes" text="  Digite Seus Dados" styleClass="login-botao"  GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2" >
         <padding>
             <Insets bottom="90" right="90"/>
         </padding>
@@ -54,7 +54,7 @@
     </TextField>
 
 
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.halignment="LEFT" text="Salvar Perfil" textAlignment="JUSTIFY" styleClass="pf-botao">
+    <Button GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.halignment="LEFT" text="Salvar Perfil" textAlignment="JUSTIFY" styleClass="pf-botao" onAction="#salvarPerfil">
 
     </Button>
 
