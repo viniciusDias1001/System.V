@@ -35,22 +35,15 @@
         </padding>
     </Button>
 
-    <Label styleClass="login-form-labelPag01" text="Busca por CPF:" GridPane.columnIndex="0"  GridPane.rowIndex="3" GridPane.halignment="LEFT"></Label>
-    <Button   styleClass="login-botao" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="CENTER" GridPane.columnSpan="1" >
-        <padding>
-            <Insets left="40" right="40" top="10" bottom="10"  />
-        </padding>
-    </Button>
-
-    <Label styleClass="login-form-labelPag01" text="Busca por Nome:" GridPane.columnIndex="0"  GridPane.rowIndex="4" GridPane.halignment="LEFT"></Label>
-    <Button   styleClass="login-botao" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.halignment="CENTER" GridPane.columnSpan="1" >
+    <Label styleClass="login-form-labelPag01" text="Buscar Perfil:" GridPane.columnIndex="0"  GridPane.rowIndex="3" GridPane.halignment="LEFT"></Label>
+    <Button  fx:id="buscar" styleClass="login-botao" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="CENTER" GridPane.columnSpan="1" onAction="#buscar" >
         <padding>
             <Insets left="40" right="40" top="10" bottom="10"  />
         </padding>
     </Button>
 
     <Label styleClass="login-form-labelPag01" text="Lista de Perfils:" GridPane.columnIndex="0"  GridPane.rowIndex="5" GridPane.halignment="LEFT"></Label>
-    <Button   styleClass="login-botao" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.halignment="CENTER" GridPane.columnSpan="1" >
+    <Button   styleClass="login-botao" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.halignment="CENTER" GridPane.columnSpan="1"  >
         <padding>
             <Insets left="40" right="40" top="10" bottom="10"  />
         </padding>

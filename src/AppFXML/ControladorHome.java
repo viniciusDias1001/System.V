@@ -16,8 +16,20 @@ public class ControladorHome implements Tela {
     private Button criaPf;
     @FXML
     private Button voltarLogin;
+    @FXML
+    private Button buscar;
 
 
+    public void buscar() throws IOException{
+        buscar.setOnAction(e ->{
+            try {
+                mudarTelaparaBuscar(e);
+            } catch (IOException io){
+                io.getMessage();
+            }
+        });
+
+    }
 
     public void criarPf() throws IOException{
         criaPf.setOnAction(e ->{
@@ -50,6 +62,17 @@ public class ControladorHome implements Tela {
         String arquivoCSS = getClass().getResource("/AppFXML/login.css").toExternalForm();
         cenaPag01.getStylesheets().add(arquivoCSS);
         window.setTitle("Criação de Perfil");
+        window.setScene(cenaPag01);
+        window.show();
+
+    }
+    public void mudarTelaparaBuscar(ActionEvent event) throws IOException {
+        Parent telaPag1 = FXMLLoader.load(getClass().getResource("/AppFXML/buscaPerfil.fxml"));
+        Scene cenaPag01 = new Scene(telaPag1,450,500);
+        Stage window =  (Stage)((Node)event.getSource()).getScene().getWindow();
+        String arquivoCSS = getClass().getResource("/AppFXML/login.css").toExternalForm();
+        cenaPag01.getStylesheets().add(arquivoCSS);
+        window.setTitle("Busca de Perfil");
         window.setScene(cenaPag01);
         window.show();
 
